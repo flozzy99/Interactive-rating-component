@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+/* start main rules */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+
+}
+:root{
+    --primary-color: hsl(25, 97%, 53%);
+    --body-color: hsl(216, 12%, 8%);
+    --bg-color: #1d242e;
+    --heading-color: hsl(0,0%,100%);
+    --text-color:  hsl(217, 12%, 63%);
+    --btn-color: #262f38;
+    }   
+
+/* End main rules */
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    background-color: var(--body-color);
+}
+.container{
+    
+    
+}
+.card{
+    width: 412px;
+    height: 417px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+    padding: 30px;
+    border-radius: 1em;
+}
+.card .image{
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    width: 3rem;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+    
+}
+.card .image img{
+    
+}
+.card h1{
+    margin: 26px 0 10px 0;
+    color: var(--heading-color);
+    
+}
+.card p{
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: var(--text-color);
+    margin: 10px 0;
+
+}
+.numbers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-color);
+    margin: 20px 0;
+    
+    
+}
+.numbers span{
+    display: grid;
+    place-items: center;
+    aspect-ratio: 1;
+    width: 50px;
+    background-color: var(--btn-color);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 300ms;
+}
+.numbers span:hover{
+    background-color: var(--primary-color);
+}
+.card input{
+    width: 100%;
+    height: 3em;
+    background-color: var(--primary-color);
+    color: var(--heading-color);
+    border: none;
+    border-radius: 8em;
+    transition: 0.4s;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+    .card input:hover{
+        color: var(--primary-color);
+        background-color: var(--heading-color);
+    }
